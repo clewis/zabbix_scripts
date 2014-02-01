@@ -234,7 +234,7 @@ def zabbixSend(filename,zabbix_server,zabbix_port,dryrun=False):
         for k in data.keys():
             print "%s: %s" % (k,data[k])
     else:
-        p = subprocess.Popen(['/usr/bin/zabbix_sender',
+        p = subprocess.Popen(['/usr/local/bin/zabbix_sender',
                               '-z', zabbix_server,
                               '-p', zabbix_port,
                               '-i', filename], stdout=subprocess.PIPE, shell=False).communicate()
