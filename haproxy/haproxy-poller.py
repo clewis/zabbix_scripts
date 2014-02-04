@@ -162,10 +162,10 @@ def get_options(v):
             { "hap_req_tot": False },
             { "hap_cli_abrt": False },
             { "hap_srv_abrt": False },
-            { "unknown1": False},
-            { "unknown2": False},
-            { "unknown3": False},
-            { "unknown4": False}, { "Null": False } )
+            { "hap_comp_in": False},
+            { "hap_comp_out": False},
+            { "hap_comp_byp": False},
+            { "hap_comp_rsp": False}, { "Null": False } )
     }
     return options[v[:3]]
 
